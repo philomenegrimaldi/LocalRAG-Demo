@@ -1,0 +1,838 @@
+[
+  {
+    "element_id": "dbd6b3d4ef8255c3fbe071a6338edf46",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            502.1,
+            462.7
+          ],
+          [
+            502.1,
+            500.1
+          ],
+          [
+            1154.3,
+            500.1
+          ],
+          [
+            1154.3,
+            462.7
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "detection_class_prob": 0.42823,
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 1
+    },
+    "text": "The Silver Halide Workshop - October 2025",
+    "type": "Title"
+  },
+  {
+    "element_id": "bccacbb62f0a59135c6b89dbe8f2f4e4",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            979.8,
+            535.4
+          ],
+          [
+            979.8,
+            569.5
+          ],
+          [
+            1463.7,
+            569.5
+          ],
+          [
+            1463.7,
+            535.4
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "detection_class_prob": 0.47464,
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 1,
+      "parent_id": "dbd6b3d4ef8255c3fbe071a6338edf46"
+    },
+    "text": "Prepared by: The Master Chemist",
+    "type": "NarrativeText"
+  },
+  {
+    "element_id": "6887d9ee779b2b2e89fda6191f7c4b81",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            1168.6,
+            605.5
+          ],
+          [
+            1168.6,
+            638.8
+          ],
+          [
+            1463.7,
+            638.8
+          ],
+          [
+            1463.7,
+            605.5
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "detection_class_prob": 0.49058,
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 1,
+      "parent_id": "dbd6b3d4ef8255c3fbe071a6338edf46"
+    },
+    "text": "Attention: The Team",
+    "type": "NarrativeText"
+  },
+  {
+    "element_id": "9d4764a1bafe3dd1db58fa94b249def6",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            190.3,
+            744.2
+          ],
+          [
+            190.3,
+            871.9
+          ],
+          [
+            1454.8,
+            871.9
+          ],
+          [
+            1454.8,
+            744.2
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "detection_class_prob": 0.93149,
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 1,
+      "parent_id": "dbd6b3d4ef8255c3fbe071a6338edf46"
+    },
+    "text": "Welcome to the backstage of magic! Every perfect print, every successfully developed negative, comes at a material cost. This report doesn't smell like fixer (lucky for you), but it details everything our darkroom consumed this month.",
+    "type": "NarrativeText"
+  },
+  {
+    "element_id": "e6a114fb56ebd3c8615f9737bb9aa5c4",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            196.6,
+            977.2
+          ],
+          [
+            196.6,
+            1010.5
+          ],
+          [
+            866.2,
+            1010.5
+          ],
+          [
+            866.2,
+            977.2
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "detection_class_prob": 0.84277,
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 1
+    },
+    "text": "1. The Liquid Magic: Chemical Consumption",
+    "type": "Title"
+  },
+  {
+    "element_id": "c4a5b27dd3fb65554c0d583c6355c573",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            191.0,
+            1046.5
+          ],
+          [
+            191.0,
+            1174.2
+          ],
+          [
+            1456.1,
+            1174.2
+          ],
+          [
+            1456.1,
+            1046.5
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "detection_class_prob": 0.92551,
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 1,
+      "parent_id": "e6a114fb56ebd3c8615f9737bb9aa5c4"
+    },
+    "text": "The heart of our craft. This is where the latent image becomes visible. Consumption was steady, with a spike in C-41 color developing, a sure sign that the summer holidays are being processed!",
+    "type": "NarrativeText"
+  },
+  {
+    "element_id": "04ab846d55785ded2050c74aab8e5169",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            194.6,
+            1199.2
+          ],
+          [
+            194.6,
+            2026.5
+          ],
+          [
+            1456.1,
+            2026.5
+          ],
+          [
+            1456.1,
+            1199.2
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "detection_class_prob": 0.9351,
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 1,
+      "parent_id": "e6a114fb56ebd3c8615f9737bb9aa5c4",
+      "text_as_html": "<table><thead><tr><th>Chemical Product</th><th>Primary Use</th><th>Quantity (Liters)</th><th>Comments / Watch Point</th></tr></thead><tbody><tr><td>B&amp;W Developer (D-76)</td><td>B&amp;W Film &amp; Paper</td><td>45L</td><td>The workshop standard. Stock is OK.</td></tr><tr><td>Color Developer (C-41 Kit)</td><td>Color Negatives</td><td>30L</td><td>High demand this month.</td></tr><tr><td>Stop Bath (Acetic Acid 2%)</td><td>Halting development</td><td>7OL</td><td>High consumption. Smell of vinegar included.</td></tr><tr><td>Fixer (Rapid)</td><td>Making the image permanent</td><td>65L</td><td>The key to archival quality. Reorder soon.</td></tr><tr><td>Bleach-Fix (RA-4 Kit)</td><td>Color Papers</td><td>22L</td><td>Stable.</td></tr><tr><td>Wetting Agent (Final)</td><td>Streak-free drying</td><td>3L</td><td>The final touch. Don't overuse!</td></tr></tbody></table>"
+    },
+    "text": "Chemical Product Primary Use Quantity (Liters) Comments / Watch Point B&W Developer (D-76) B&W Film & Paper 45 L The workshop standard. Stock is OK. Color Developer (C-41 Kit) Color Negatives 30 L High demand this month. Stop Bath (Acetic Acid 2%) Halting development 70 L High consumption. Smell of vinegar included. Fixer (Rapid) Making the image permanent 65 L The key to archival quality. Reorder soon. Bleach-Fix (RA-4 Kit) Color Papers 22 L Stable. Wetting Agent (Final) Streak-free drying 3 L The final touch. Don't overuse!",
+    "type": "Table"
+  },
+  {
+    "element_id": "fe70465b33eff31ea30210c7eab56ef0",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            194.1,
+            395.1
+          ],
+          [
+            194.1,
+            430.8
+          ],
+          [
+            1062.3,
+            430.8
+          ],
+          [
+            1062.3,
+            395.1
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "detection_class_prob": 0.76621,
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 2
+    },
+    "text": "2. Where the Image Comes to Life: Photosensitive Papers",
+    "type": "Title"
+  },
+  {
+    "element_id": "11c9a8b69c4e2ca9f7c8e5d0c2e47d70",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            186.5,
+            466.8
+          ],
+          [
+            186.5,
+            547.1
+          ],
+          [
+            1426.2,
+            547.1
+          ],
+          [
+            1426.2,
+            466.8
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "detection_class_prob": 0.88547,
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 2,
+      "parent_id": "fe70465b33eff31ea30210c7eab56ef0"
+    },
+    "text": "We \"burned\" through an impressive amount of paper this month. Pearl finish seems to be the favorite among our artists.",
+    "type": "NarrativeText"
+  },
+  {
+    "element_id": "86d8cc8a3f000f599b994c2624704ef9",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            202.6,
+            569.6
+          ],
+          [
+            202.6,
+            936.2
+          ],
+          [
+            1389.6,
+            936.2
+          ],
+          [
+            1389.6,
+            569.6
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "detection_class_prob": 0.83043,
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 2,
+      "parent_id": "fe70465b33eff31ea30210c7eab56ef0",
+      "text_as_html": "<table><thead><tr><th>Paper Type</th><th>Finish</th><th>Surface Area Consumed (m’)</th></tr></thead><tbody><tr><td>RC (Resin Coated)</td><td>Glossy</td><td>180 m?</td></tr><tr><td>RC (Resin Coated)</td><td>Pearl (Lustre/Satin)</td><td>220m?</td></tr><tr><td>Fiber Base (Baryta)</td><td>Glossy</td><td>2 35m</td></tr><tr><td>Fiber Base (Baryta)</td><td>Matte</td><td>2 15m</td></tr></tbody></table>"
+    },
+    "text": "Paper Type Finish Surface Area Consumed (m²) RC (Resin Coated) Paper Glossy 180 m² RC (Resin Coated) Paper Pearl (Lustre/Satin) 220 m² Fiber Base (Baryta) Paper Glossy 35 m² Fiber Base (Baryta) Paper Matte 15 m²",
+    "type": "Table"
+  },
+  {
+    "element_id": "ed0b192d76b835eb7c3537c8750f2919",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            187.7,
+            1007.7
+          ],
+          [
+            187.7,
+            1135.5
+          ],
+          [
+            1425.4,
+            1135.5
+          ],
+          [
+            1425.4,
+            1007.7
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "detection_class_prob": 0.92622,
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 2,
+      "parent_id": "fe70465b33eff31ea30210c7eab56ef0"
+    },
+    "text": "Printer's Note: The matte fiber-base paper was mainly used for the \"Urban Contrasts\" exhibition. The results are stunning, but the wash time (and thus water consumption) must be factored in.",
+    "type": "NarrativeText"
+  },
+  {
+    "element_id": "524bf2489545a896a8c54d98bdeb72e1",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            194.2,
+            1240.9
+          ],
+          [
+            194.2,
+            1274.3
+          ],
+          [
+            981.3,
+            1274.3
+          ],
+          [
+            981.3,
+            1240.9
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "detection_class_prob": 0.86846,
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 2
+    },
+    "text": "3. The Unsung Heroes of the Dark (Utilities & Safety)",
+    "type": "Title"
+  },
+  {
+    "element_id": "903a21df1077a7f144d33daf6bae5d6a",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            192.2,
+            1310.3
+          ],
+          [
+            192.2,
+            1390.6
+          ],
+          [
+            1433.3,
+            1390.6
+          ],
+          [
+            1433.3,
+            1310.3
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "detection_class_prob": 0.90744,
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 2,
+      "parent_id": "524bf2489545a896a8c54d98bdeb72e1"
+    },
+    "text": "These are the workshop's unsung heroes. Without them, we'd have no clean prints and very sore hands!",
+    "type": "NarrativeText"
+  },
+  {
+    "element_id": "4e7aa9c8f917e3f0a8a8cf4d50aefe1f",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            238.9,
+            1426.3
+          ],
+          [
+            238.9,
+            1989.1
+          ],
+          [
+            1408.8,
+            1989.1
+          ],
+          [
+            1408.8,
+            1426.3
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "detection_class_prob": 0.71632,
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 2,
+      "parent_id": "524bf2489545a896a8c54d98bdeb72e1",
+      "text_as_html": "<table><tbody><tr><td>e</td><td>Deionized Water: 500 Liters Use: Mixing all stock chemistries.</td><td>e ©Safelights (Red Bulbs): 2 replacements</td></tr><tr><td></td><td>This guarantees the purity of our</td><td>Use: Seeing in the dark without</td></tr><tr><td></td><td>baths.</td><td>fogging the paper.</td></tr><tr><td>e</td><td>Nitrile Gloves: 4 Boxes (approx.</td><td>e Carbon Filters (Ventilation): ‘</td></tr><tr><td></td><td>400 pairs)</td><td>replacement cycle</td></tr><tr><td></td><td>Use: Protection from reagents.</td><td>Use: Keeping the workshop air</td></tr><tr><td></td><td>Safety first!</td><td>breathable.</td></tr><tr><td></td><td></td><td>e Negative Sleeves: 600 units Use: Protecting client negatives.</td></tr></tbody></table>"
+    },
+    "text": "• Deionized Water: 500 Liters • Safelights (Red Bulbs): 2 Use: Mixing all stock chemistries. This guarantees the purity of our baths. replacements Use: Seeing in the dark without fogging the paper. • Nitrile Gloves: 4 Boxes (approx. 400 pairs) replacement cycle Use: Protection from reagents. Safety first! Use: Keeping the workshop air breathable. • Negative Sleeves: 600 units",
+    "type": "Table"
+  },
+  {
+    "element_id": "4406e9593b3fab3648a7543453c56e5c",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            926.2,
+            1659.6
+          ],
+          [
+            926.2,
+            1692.9
+          ],
+          [
+            1424.0,
+            1692.9
+          ],
+          [
+            1424.0,
+            1659.6
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 2,
+      "parent_id": "524bf2489545a896a8c54d98bdeb72e1"
+    },
+    "text": "Carbon Filters (Ventilation): 1",
+    "type": "ListItem"
+  },
+  {
+    "element_id": "e5d870df89526d7fc1d30a1384825ee5",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            926.2,
+            1962.0
+          ],
+          [
+            926.2,
+            1995.3
+          ],
+          [
+            1392.0,
+            1995.3
+          ],
+          [
+            1392.0,
+            1962.0
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 2,
+      "parent_id": "524bf2489545a896a8c54d98bdeb72e1"
+    },
+    "text": "Use: Protecting client negatives.",
+    "type": "NarrativeText"
+  },
+  {
+    "element_id": "f086eb5baff22cb419791b135b813cf8",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            196.7,
+            394.5
+          ],
+          [
+            196.7,
+            430.8
+          ],
+          [
+            874.0,
+            430.8
+          ],
+          [
+            874.0,
+            394.5
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "detection_class_prob": 0.84732,
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 3
+    },
+    "text": "4. The Master Printer's Analysis (Conclusion)",
+    "type": "Title"
+  },
+  {
+    "element_id": "786feb1b1b5d92e16dfd5a92c066f341",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            196.2,
+            464.9
+          ],
+          [
+            196.2,
+            500.1
+          ],
+          [
+            682.2,
+            500.1
+          ],
+          [
+            682.2,
+            464.9
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "detection_class_prob": 0.81012,
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 3,
+      "parent_id": "f086eb5baff22cb419791b135b813cf8"
+    },
+    "text": "October was a productive month.",
+    "type": "NarrativeText"
+  },
+  {
+    "element_id": "68ef8cd82de3e820f4f1b17b393f515d",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            242.9,
+            533.6
+          ],
+          [
+            242.9,
+            569.5
+          ],
+          [
+            1332.7,
+            569.5
+          ],
+          [
+            1332.7,
+            533.6
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "detection_class_prob": 0.83257,
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 3,
+      "parent_id": "f086eb5baff22cb419791b135b813cf8"
+    },
+    "text": "1. Trend: Demand for C-41 (color) and RC Pearl paper is clearly increasing.",
+    "type": "ListItem"
+  },
+  {
+    "element_id": "c56fa8f33b12ea5de2ca731d1acbea0f",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            242.0,
+            602.7
+          ],
+          [
+            242.0,
+            686.1
+          ],
+          [
+            1408.2,
+            686.1
+          ],
+          [
+            1408.2,
+            602.7
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "detection_class_prob": 0.91226,
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 3,
+      "parent_id": "f086eb5baff22cb419791b135b813cf8"
+    },
+    "text": "2. Watch Point: Our Rapid Fixer stock is dwindling faster than expected. A bulk order must be placed for November to avoid a shortage.",
+    "type": "ListItem"
+  },
+  {
+    "element_id": "de9bf823f7fc9b507a948c7afb525c92",
+    "metadata": {
+      "coordinates": {
+        "layout_height": 2339,
+        "layout_width": 1654,
+        "points": [
+          [
+            233.6,
+            719.8
+          ],
+          [
+            233.6,
+            802.5
+          ],
+          [
+            1434.9,
+            802.5
+          ],
+          [
+            1434.9,
+            719.8
+          ]
+        ],
+        "system": "PixelSpace"
+      },
+      "detection_class_prob": 0.9178,
+      "file_directory": "inputs",
+      "filename": "file_example.pdf",
+      "filetype": "application/pdf",
+      "languages": [
+        "eng"
+      ],
+      "last_modified": "2025-11-09T17:56:26",
+      "page_number": 3,
+      "parent_id": "f086eb5baff22cb419791b135b813cf8"
+    },
+    "text": "3. Suggestion: Water consumption for washing Fiber Base papers is significant. A reminder to all staff to optimize washing cycles.",
+    "type": "ListItem"
+  }
+]
