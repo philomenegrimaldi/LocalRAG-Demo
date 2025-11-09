@@ -11,7 +11,23 @@ Welcome to the backstage of magic! Every perfect print, every successfully devel
 1. The Liquid Magic: Chemical Consumption
 
 Table 04ab846d55785ded2050c74aab8e5169 (plumber version):
-[Table missing]
+Chemical
+Product |  |  | Primary Use |  |  | Quantity
+(Liters) | Comments / Watch Point |  | 
+ | B&W Developer |  | B&W Film & Paper |  |  | 45 L |  | The workshop standard. | 
+ | (D-76) |  |  |  |  |  |  | Stock is OK. | 
+Color Developer
+(C-41 Kit) |  |  | Color Negatives |  |  | 30 L | High demand this month. |  | 
+ | Stop Bath (Acetic |  |  | Halting |  | 70 L |  | High consumption. Smell of | 
+ | Acid 2%) |  |  | development |  |  |  | vinegar included. | 
+Fixer (Rapid) |  |  | Making the image
+permanent |  |  | 65 L | The key to archival quality.
+Reorder soon. |  | 
+ | Bleach-Fix (RA-4 |  | Color Papers |  |  | 22 L | Stable. |  | 
+ | Kit) |  |  |  |  |  |  |  | 
+Wetting Agent
+(Final) |  |  | Streak-free drying |  |  | 3 L | The final touch. Don't
+overuse! |  |
 
 Table 04ab846d55785ded2050c74aab8e5169 (fitz version):
 Chemical 
@@ -64,7 +80,11 @@ The heart of our craft. This is where the latent image becomes visible. Consumpt
 2. Where the Image Comes to Life: Photosensitive Papers
 
 Table 86d8cc8a3f000f599b994c2624704ef9 (plumber version):
-[Table missing]
+Paper Type |  |  | Finish |  |  | Surface Area Consumed (m²) |  | 
+ | RC (Resin Coated) Paper |  |  | Glossy |  |  | 180 m² | 
+RC (Resin Coated) Paper |  |  | Pearl (Lustre/Satin) |  |  | 220 m² |  | 
+ | Fiber Base (Baryta) Paper |  |  | Glossy |  |  | 35 m² | 
+Fiber Base (Baryta) Paper |  |  | Matte |  |  | 15 m² |  |
 
 Table 86d8cc8a3f000f599b994c2624704ef9 (fitz version):
 Paper Type 

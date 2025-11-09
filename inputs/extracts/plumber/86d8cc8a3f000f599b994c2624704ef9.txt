@@ -1,0 +1,5 @@
+Paper Type |  |  | Finish |  |  | Surface Area Consumed (m²) |  | 
+ | RC (Resin Coated) Paper |  |  | Glossy |  |  | 180 m² | 
+RC (Resin Coated) Paper |  |  | Pearl (Lustre/Satin) |  |  | 220 m² |  | 
+ | Fiber Base (Baryta) Paper |  |  | Glossy |  |  | 35 m² | 
+Fiber Base (Baryta) Paper |  |  | Matte |  |  | 15 m² |  | 
