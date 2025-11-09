@@ -1,40 +1,40 @@
 import os
 import fitz  # PyMuPDF
 
-def vider_dossier(dossier):
-    if not os.path.exists(dossier):
-        print("[ERREUR] Dossier inexistant.")
+def clear_folder(folder):
+    """Delete all files in a given folder."""
+    if not os.path.exists(folder):
+        print("[ERROR] Folder does not exist.")
         return
-    i=0
-    print(f"[INFO] Suppression des fichiers de {dossier} en cours...")
-    for filename in os.listdir(dossier):
-        file_path = os.path.join(dossier, filename)
+    count = 0
+    print(f"[INFO] Deleting files from {folder}...")
+    for filename in os.listdir(folder):
+        file_path = os.path.join(folder, filename)
         try:
             if os.path.isfile(file_path):
                 os.remove(file_path)
-                i+=1
+                count += 1
         except Exception as e:
-            print(f"[ERREUR] Suppression {file_path}: {e}")
-    print(f"[OK] {i} fichiers supprimés")
+            print(f"[ERROR] Failed to delete {file_path}: {e}")
+    print(f"[OK] {count} files deleted.")
 
 
-
-def extract_fitz(input_folder,output_folder):  
-
+def extract_fitz(input_folder, output_folder):
+    """Extract text from the first page of each PDF in input_folder using PyMuPDF (fitz)."""
     os.makedirs(output_folder, exist_ok=True)
-    vider_dossier(output_folder)
-    j=0
-    i=0
+    clear_folder(output_folder)
+
+    extracted_count = 0
+    error_count = 0
 
     for filename in os.listdir(input_folder):
         if not filename.lower().endswith(".pdf"):
             continue
 
         pdf_path = os.path.join(input_folder, filename)
-        
         try:
             doc = fitz.open(pdf_path)
-            page = doc[0]  # première page
+            page = doc[0]  # first page
             content_text = page.get_text("text").strip()
 
             output_name = os.path.splitext(filename)[0] + ".txt"
@@ -43,19 +43,16 @@ def extract_fitz(input_folder,output_folder):
             with open(output_path, "w", encoding="utf-8") as f:
                 f.write(content_text)
 
-            # print(f"✅ Texte brut sauvegardé → {output_path}")
-            i+=1
+            extracted_count += 1
 
         except Exception as e:
-            # print(f"❌ Erreur avec {filename} : {e}")
-            j+=1
-    print(f"[OK] Extraction fitz terminée. Extraits: {i} ; Erreurs: {j}")
+            # print(f"[ERROR] Failed with {filename}: {e}")
+            error_count += 1
 
+    print(f"[OK] Fitz extraction completed. Extracted: {extracted_count} | Errors: {error_count}")
 
 
 if __name__ == "__main__":
-    input_folder = f"inputs\extracts\pdf"
-    output_folder = f"inputs/extracts/fitz"
-    extract_fitz(input_folder,output_folder)
-    
-
+    input_folder = "inputs/extracts/pdf"
+    output_folder = "inputs/extracts/fitz"
+    extract_fitz(input_folder, output_folder)

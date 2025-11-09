@@ -2,30 +2,35 @@ import os
 import pdfplumber
 
 
-def vider_dossier(dossier):
-    if not os.path.exists(dossier):
-        print("❌ Le dossier n'existe pas.")
+def clear_folder(folder):
+    """Delete all files in a given folder."""
+    if not os.path.exists(folder):
+        print("❌ The folder does not exist.")
         return
-    i=0
-    print(f"[INFO] Suppression des fichiers de {dossier} en cours...")
-    for filename in os.listdir(dossier):
-        file_path = os.path.join(dossier, filename)
+
+    deleted_count = 0
+    print(f"[INFO] Deleting files from {folder}...")
+
+    for filename in os.listdir(folder):
+        file_path = os.path.join(folder, filename)
         try:
             if os.path.isfile(file_path):
                 os.remove(file_path)
-                i+=1
+                deleted_count += 1
         except Exception as e:
-            print(f"❌ Erreur en supprimant {file_path} : {e}")
-    print(f"[OK] {i} fichiers supprimés")
+            print(f"❌ Error deleting {file_path}: {e}")
+
+    print(f"[OK] {deleted_count} files deleted.")
 
 
-def extract_plumber(input_folder,output_folder):
-
+def extract_plumber(input_folder, output_folder):
+    """Extract the first table from each PDF using pdfplumber."""
 
     os.makedirs(output_folder, exist_ok=True)
-    vider_dossier(output_folder)
-    i=0
-    j=0
+    clear_folder(output_folder)
+
+    extracted_count = 0
+    no_table_count = 0
 
     for filename in os.listdir(input_folder):
         if not filename.lower().endswith(".pdf"):
@@ -41,37 +46,31 @@ def extract_plumber(input_folder,output_folder):
                 table = crop.extract_table()
 
                 if not table:
-                    # print(f"  Aucun tableau détecté dans {filename}")
-                    j+=1
+                    # print(f"  No table detected in {filename}")
+                    no_table_count += 1
                     continue
 
-                # Préparer le contenu à sauvegarder
+                # Prepare the extracted table content
                 lines = []
                 for row in table:
                     line = " | ".join(cell or "" for cell in row)
                     lines.append(line)
                 content = "\n".join(lines)
 
-                # Sauvegarder dans un fichier texte
+                # Save extracted table as text
                 output_path = os.path.join(output_folder, f"{os.path.splitext(filename)[0]}.txt")
                 with open(output_path, "w", encoding="utf-8") as f:
                     f.write(content)
 
-                # print(f"  Tableau extrait et sauvegardé dans {output_path}")
-                i+=1
+                extracted_count += 1
 
         except Exception as e:
-            print(f"  Erreur avec {filename} : {e}")
-    print(f"Extraction plumber terminée : {i} tableaux extraits ; {j} documents ne possèdent pas de tableaux.")
+            print(f"  Error processing {filename}: {e}")
 
-
-
-
+    print(f"[OK] PdfPlumber extraction completed: {extracted_count} tables extracted; {no_table_count} files without tables.")
 
 
 if __name__ == "__main__":
-    input_folder = f"inputs\extracts\pdf"
-    output_folder = f"inputs\extracts\plumber"
-    extract_plumber(input_folder,output_folder)
-    
-
+    input_folder = "inputs/extracts/pdf"
+    output_folder = "inputs/extracts/plumber"
+    extract_plumber(input_folder, output_folder)

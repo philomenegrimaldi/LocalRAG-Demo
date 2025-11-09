@@ -2,65 +2,65 @@ from langchain_community.vectorstores import FAISS
 from langchain_ollama import OllamaEmbeddings, OllamaLLM
 import json
 
-def recherche_semantique(question_semantique, dossier_vectorstore, k=3, debug: bool = False):
+
+def semantic_search(query: str, vectorstore_folder: str, k: int = 3, debug: bool = False):
+    """
+    Perform a semantic search over the FAISS vectorstore using Ollama embeddings.
+    """
     embeddings = OllamaEmbeddings(model="nomic-embed-text")
-    db = FAISS.load_local(dossier_vectorstore, embeddings, allow_dangerous_deserialization=True)
-    results = db.similarity_search(question_semantique, k=k)
+    db = FAISS.load_local(
+        vectorstore_folder,
+        embeddings,
+        allow_dangerous_deserialization=True
+    )
+    results = db.similarity_search(query, k=k)
+
     for i, doc in enumerate(results):
         if debug:
-            print(f"[DEBUG] RAG SEM résultat {i+1} chunk_id={doc.metadata.get('chunk_id', 'unknown')}\n{doc.page_content}")
+            print(f"[DEBUG] RAG SEM result {i+1} chunk_id={doc.metadata.get('chunk_id', 'unknown')}\n{doc.page_content}")
+
     return results
 
 
+def ask_llm(question: str, retrieved_docs):
+    """
+    Ask an LLM (Ollama) a question based on retrieved documents (RAG).
+    """
+    llm_model = "mistral:7b"
 
-
-def poser_question_au_llm(question_llm, rag_sem):
-    llm_model="mistral:7b"
-    
-    # Préparer le contenu brut des chunks
-    rag_sem = "\n\n".join([doc.page_content for doc in rag_sem])
-
+    # Combine retrieved chunk contents
+    raw_context = "\n\n".join([doc.page_content for doc in retrieved_docs])
 
     prompt = f"""
-            {question_llm}
+{question}
 
-            Give the unique response between crochet : [response] 
-            Here are raw datas :
-            {rag_sem}
-
-            """
-
+Give the unique response between brackets: [response] 
+Here is the raw data:
+{raw_context}
+"""
 
     llm = OllamaLLM(model=llm_model)
-    reponse_llm = llm.invoke(prompt)
-
-    return reponse_llm
-
+    response = llm.invoke(prompt)
+    return response
 
 
-def acces_llm(question_llm, question_semantique, debug: bool = False):
-    # print(f"Question : Je cherche {question_llm}")
-    dossier_vectorstore=f"inputs/vectorstore"
-    rag_sem = recherche_semantique(question_semantique, dossier_vectorstore, debug=debug)
-    reponse_llm = poser_question_au_llm(question_llm, rag_sem)
+def access_llm(question_llm: str, query_semantic: str, debug: bool = False):
+    """
+    High-level function to perform semantic search and ask the LLM.
+    """
+    vectorstore_folder = "inputs/vectorstore"
+    retrieved_docs = semantic_search(query_semantic, vectorstore_folder, debug=debug)
+    response = ask_llm(question_llm, retrieved_docs)
+
     if debug:
-        print(f"[INFO] LLM question: {question_llm}\n[INFO] LLM réponse: {reponse_llm}")
-    return reponse_llm
+        print(f"[INFO] LLM question: {question_llm}\n[INFO] LLM response: {response}")
 
-
+    return response
 
 
 if __name__ == "__main__":
+    question_llm = "What is the Surface Area Consumed (m²) of RC (Resin Coated) Paper?"
+    query_semantic = "RC (Resin Coated) Paper"
 
-    question=f"""What is the Surface Area Consumed (m²) of RC (Resin Coated) Paper  ?
-    """
-    question_semantique="RC (Resin Coated) Paper"
-                            
-    rep=acces_llm(question, question_semantique)
-    print(rep)
-
-
-
-
-
-
+    answer = access_llm(question_llm, query_semantic)
+    print(answer)

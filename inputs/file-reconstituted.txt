@@ -10,10 +10,10 @@ Welcome to the backstage of magic! Every perfect print, every successfully devel
 -------------------------------------------------------------
 1. The Liquid Magic: Chemical Consumption
 
-Tableau 04ab846d55785ded2050c74aab8e5169 (version plumber) :
-[Table manquante]
+Table 04ab846d55785ded2050c74aab8e5169 (plumber version):
+[Table missing]
 
-Tableau 04ab846d55785ded2050c74aab8e5169 (version fitz) :
+Table 04ab846d55785ded2050c74aab8e5169 (fitz version):
 Chemical 
 Product 
 Primary Use 
@@ -56,17 +56,17 @@ Streak-free drying
 The final touch. Don't 
 overuse!
 
-Fin tableau 04ab846d55785ded2050c74aab8e5169 (version fitz) :
+End of Table 04ab846d55785ded2050c74aab8e5169 (fitz version)
 -------------------------------------------------------------
 The heart of our craft. This is where the latent image becomes visible. Consumption was steady, with a spike in C-41 color developing, a sure sign that the summer holidays are being processed!
 
 -------------------------------------------------------------
 2. Where the Image Comes to Life: Photosensitive Papers
 
-Tableau 86d8cc8a3f000f599b994c2624704ef9 (version plumber) :
-[Table manquante]
+Table 86d8cc8a3f000f599b994c2624704ef9 (plumber version):
+[Table missing]
 
-Tableau 86d8cc8a3f000f599b994c2624704ef9 (version fitz) :
+Table 86d8cc8a3f000f599b994c2624704ef9 (fitz version):
 Paper Type 
 Finish 
 Surface Area Consumed (m²) 
@@ -80,7 +80,7 @@ Fiber Base (Baryta) Paper Glossy
 Fiber Base (Baryta) Paper Matte 
 15 m²
 
-Fin tableau 86d8cc8a3f000f599b994c2624704ef9 (version fitz) :
+End of Table 86d8cc8a3f000f599b994c2624704ef9 (fitz version)
 -------------------------------------------------------------
 We "burned" through an impressive amount of paper this month. Pearl finish seems to be the favorite among our artists.
 
@@ -89,10 +89,10 @@ Printer's Note: The matte fiber-base paper was mainly used for the "Urban Contra
 -------------------------------------------------------------
 3. The Unsung Heroes of the Dark (Utilities & Safety)
 
-Tableau 4e7aa9c8f917e3f0a8a8cf4d50aefe1f (version plumber) :
-[Table manquante]
+Table 4e7aa9c8f917e3f0a8a8cf4d50aefe1f (plumber version):
+[Table missing]
 
-Tableau 4e7aa9c8f917e3f0a8a8cf4d50aefe1f (version fitz) :
+Table 4e7aa9c8f917e3f0a8a8cf4d50aefe1f (fitz version):
 • 
 Deionized Water: 500 Liters 
 Use: Mixing all stock chemistries. 
@@ -118,7 +118,7 @@ breathable.
 Negative Sleeves: 600 units 
 Use: Protecting client negatives.
 
-Fin tableau 4e7aa9c8f917e3f0a8a8cf4d50aefe1f (version fitz) :
+End of Table 4e7aa9c8f917e3f0a8a8cf4d50aefe1f (fitz version)
 -------------------------------------------------------------
 These are the workshop's unsung heroes. Without them, we'd have no clean prints and very sore hands!
 

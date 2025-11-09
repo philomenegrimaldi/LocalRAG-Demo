@@ -1,32 +1,34 @@
 import json
+import multiprocessing
 from langchain_ollama import OllamaEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
 
-import multiprocessing
 
-def vectoriser_chunks(chunks_json: str, dossier_vectorstore: str):
-    chunks_json=chunks_json+".json"
-    # 1. Charger les chunks
+def vectorize_chunks(chunks_json: str, vectorstore_folder: str):
+    chunks_json = chunks_json + ".json"
+
+    # 1. Load the chunks
     try:
         with open(chunks_json, "r", encoding="utf-8") as f:
             chunks = json.load(f)
     except Exception as e:
-        print(f"[ERREUR] Lecture du fichier JSON: {e}")
+        print(f"[ERROR] Failed to read JSON file: {e}")
         return
 
-    # 2. Construire les documents 
+    # 2. Build the documents
     docs = []
     for i, chunk in enumerate(chunks):
         text = chunk.get("text", "").strip()
         if text:
-            docs.append(Document(
-                page_content=text,
-                metadata={"chunk_id": chunk.get("chunk_id", f"chunk_{i:03d}")}
-            ))
+            docs.append(
+                Document(
+                    page_content=text,
+                    metadata={"chunk_id": chunk.get("chunk_id", f"chunk_{i:03d}")},
+                )
+            )
 
-
-    # 3. Initialiser les embeddings Ollama
+    # 3. Initialize Ollama embeddings
     try:
         num_threads = max(1, multiprocessing.cpu_count() - 1)
         embeddings = OllamaEmbeddings(
@@ -35,28 +37,29 @@ def vectoriser_chunks(chunks_json: str, dossier_vectorstore: str):
             num_thread=num_threads,
         )
     except Exception as e:
-        print(f"[ERREUR] Chargement des embeddings: {e}")
+        print(f"[ERROR] Failed to initialize embeddings: {e}")
         return
 
-    # 4. Vectoriser les documents
+    # 4. Vectorize the documents
     try:
-        print("[INFO] Vectorisation en cours...")
+        print("[INFO] Vectorization in progress...")
         db = FAISS.from_documents(docs, embeddings)
     except Exception as e:
-        print(f"[ERREUR] Échec de la vectorisation: {e}")
+        print(f"[ERROR] Vectorization failed: {e}")
         return
 
-    # 5. Sauvegarder FAISS
+    # 5. Save FAISS index locally
     try:
-        db.save_local(dossier_vectorstore)
-        print(f"[OK] Vectorisation terminée. Dossier: {dossier_vectorstore}")
+        db.save_local(vectorstore_folder)
+        print(f"[OK] Vectorization completed successfully. Folder: {vectorstore_folder}")
     except Exception as e:
-        print(f"[ERREUR] Sauvegarde de l'index: {e}")
+        print(f"[ERROR] Failed to save FAISS index: {e}")
         return
 
-# Lancer depuis le terminal
+
+# Run from terminal
 if __name__ == "__main__":
-    vectoriser_chunks(
+    vectorize_chunks(
         chunks_json="inputs/file-chunked",
-        dossier_vectorstore="inputs/vectorstore"
+        vectorstore_folder="inputs/vectorstore"
     )
