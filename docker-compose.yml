@@ -1,0 +1,31 @@
+# Fichier: docker-compose.yml
+
+version: '3'
+
+services:
+  # Service 1: Votre application
+  app:
+    build: .  # Construit l'image en utilisant le Dockerfile dans ce dossier
+    container_name: localrag_app
+    ports:
+      - "8501:8501"  # Rend Streamlit accessible sur http://localhost:8501
+    volumes:
+      - ./inputs:/app/inputs  # Lie le dossier 'inputs' local au conteneur
+    environment:
+      # C'est ici la magie ! On dit à l'app que Ollama se trouve à l'adresse 'http://ollama:11434'
+      - OLLAMA_BASE_URL=http://ollama:11434
+    depends_on:
+      - ollama  # Dit à Docker d'attendre qu'Ollama soit lancé en premier
+
+  # Service 2: Le service Ollama
+  ollama:
+    image: ollama/ollama  # Utilise l'image officielle d'Ollama
+    container_name: localrag_ollama
+    # Note: Si vous avez un GPU NVIDIA, décommentez les lignes "deploy" ci-dessous
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]

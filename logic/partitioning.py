@@ -11,15 +11,15 @@ os.environ["TEMP"] = temp_dir
 os.environ["TMP"] = temp_dir
 
 import pytesseract
-pytesseract.pytesseract.tesseract_cmd = r"C:\Users\grima\AppData\Local\Programs\Tesseract-OCR\tesseract.exe"
-os.environ["TESSDATA_PREFIX"] = r"C:\Users\grima\AppData\Local\Programs\Tesseract-OCR\tessdata"
+# pytesseract.pytesseract.tesseract_cmd = r"C:\Users\grima\AppData\Local\Programs\Tesseract-OCR\tesseract.exe"
+# os.environ["TESSDATA_PREFIX"] = r"C:\Users\grima\AppData\Local\Programs\Tesseract-OCR\tessdata"
 
 from unstructured.partition.pdf import partition_pdf
 from unstructured.staging.base import elements_to_json
 
 # Ensure ONNX DLL path is in environment PATH
-onnx_dll_path = os.path.join(os.getcwd(), ".venv", "Lib", "site-packages", "onnxruntime")
-os.environ["PATH"] = onnx_dll_path + ";" + os.environ["PATH"]
+# onnx_dll_path = os.path.join(os.getcwd(), ".venv", "Lib", "site-packages", "onnxruntime")
+# os.environ["PATH"] = onnx_dll_path + ";" + os.environ["PATH"]
 
 
 def partition_pdf_to_json(pdf_path: str, json_partitioned: str):

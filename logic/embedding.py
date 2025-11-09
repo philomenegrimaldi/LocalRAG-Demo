@@ -3,6 +3,8 @@ import multiprocessing
 from langchain_ollama import OllamaEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
+import os
+ollama_base_url = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
 
 
 def vectorize_chunks(chunks_json: str, vectorstore_folder: str):
@@ -34,6 +36,7 @@ def vectorize_chunks(chunks_json: str, vectorstore_folder: str):
         embeddings = OllamaEmbeddings(
             model="nomic-embed-text",
             num_gpu=1,
+            base_url=ollama_base_url,
             num_thread=num_threads,
         )
     except Exception as e:

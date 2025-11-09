@@ -1,13 +1,15 @@
 from langchain_community.vectorstores import FAISS
 from langchain_ollama import OllamaEmbeddings, OllamaLLM
 import json
+import os
+ollama_base_url = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
 
 
 def semantic_search(query: str, vectorstore_folder: str, k: int = 3, debug: bool = False):
     """
     Perform a semantic search over the FAISS vectorstore using Ollama embeddings.
     """
-    embeddings = OllamaEmbeddings(model="nomic-embed-text")
+    embeddings = OllamaEmbeddings(model="nomic-embed-text", base_url=ollama_base_url,)
     db = FAISS.load_local(
         vectorstore_folder,
         embeddings,
@@ -39,7 +41,7 @@ Here is the raw data:
 {raw_context}
 """
 
-    llm = OllamaLLM(model=llm_model)
+    llm = OllamaLLM(model=llm_model,base_url=ollama_base_url)
     response = llm.invoke(prompt)
     return response
 
