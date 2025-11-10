@@ -23,12 +23,12 @@ from unstructured.staging.base import elements_to_json
 
 
 def partition_pdf_to_json(pdf_path: str, json_partitioned: str):
-    """Partition a PDF into structured JSON using Unstructured."""
-    print("[INFO] Starting PDF partition...")
+    """Partition a PDF into structured JSON using Unstructured with hi_res strategy."""
+    print("[INFO] Starting PDF partition with hi_res strategy...")
 
     elements = partition_pdf(
         filename=pdf_path + ".pdf",
-        strategy="hi_res",  # options: "auto", "fast", "hi_res", "ocr_only"
+        strategy="hi_res",  # High resolution strategy using vision models
         extract_images_in_pdf=False,
         languages=["eng"],
         extract_image_block_to_payload=False,

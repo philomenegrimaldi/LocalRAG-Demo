@@ -31,7 +31,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 1
         },
         "text": "",
@@ -69,7 +69,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 1
         },
         "text": "  ",
@@ -108,7 +108,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 1
         },
         "text": "The Silver Halide Workshop - October 2025",
@@ -147,7 +147,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 1,
             "parent_id": "dbd6b3d4ef8255c3fbe071a6338edf46"
         },
@@ -187,7 +187,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 1,
             "parent_id": "dbd6b3d4ef8255c3fbe071a6338edf46"
         },
@@ -227,7 +227,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 1,
             "parent_id": "dbd6b3d4ef8255c3fbe071a6338edf46"
         },
@@ -267,7 +267,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 1
         },
         "text": "1. The Liquid Magic: Chemical Consumption",
@@ -306,7 +306,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 1,
             "parent_id": "e6a114fb56ebd3c8615f9737bb9aa5c4"
         },
@@ -314,7 +314,7 @@
         "type": "NarrativeText"
     },
     {
-        "element_id": "04ab846d55785ded2050c74aab8e5169",
+        "element_id": "372162e2f95a39d0bdd69853eb4c4ec7",
         "metadata": {
             "coordinates": {
                 "layout_height": 2339,
@@ -346,12 +346,12 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 1,
             "parent_id": "e6a114fb56ebd3c8615f9737bb9aa5c4",
             "text_as_html": "<table><thead><tr><th>Chemical Product</th><th>Primary Use</th><th>Quantity (Liters)</th><th>Comments / Watch Point</th></tr></thead><tbody><tr><td>B&amp;W Developer (D-76)</td><td>B&amp;W Film &amp; Paper</td><td>45L</td><td>The workshop standard. Stock is OK.</td></tr><tr><td>Color Developer (C-41 Kit)</td><td>Color Negatives</td><td>30L</td><td>High demand this month.</td></tr><tr><td>Stop Bath (Acetic Acid 2%)</td><td>Halting development</td><td>7OL</td><td>High consumption. Smell of vinegar included.</td></tr><tr><td>Fixer (Rapid)</td><td>Making the image permanent</td><td>65L</td><td>The key to archival quality. Reorder soon.</td></tr><tr><td>Bleach-Fix (RA-4 Kit)</td><td>Color Papers</td><td>22L</td><td>Stable.</td></tr><tr><td>Wetting Agent (Final)</td><td>Streak-free drying</td><td>3L</td><td>The final touch. Don't overuse!</td></tr></tbody></table>"
         },
-        "text": "Chemical Product Primary Use Quantity (Liters) Comments / Watch Point B&W Developer (D-76) B&W Film & Paper 45 L The workshop standard. Stock is OK. Color Developer (C-41 Kit) Color Negatives 30 L High demand this month. Stop Bath (Acetic Acid 2%) Halting development 70 L High consumption. Smell of vinegar included. Fixer (Rapid) Making the image permanent 65 L The key to archival quality. Reorder soon. Bleach-Fix (RA-4 Kit) Color Papers 22 L Stable. Wetting Agent (Final) Streak-free drying 3 L The final touch. Don't overuse!",
+        "text": "Chemical Primary Use Quantity Comments / Watch Point Product (Liters) B&W Developer B&W Film & Paper 45 L The workshop standard. (D-76) Stock is OK. Color Developer Color Negatives 30 L High demand this month. (C-41 Kit) Stop Bath (Acetic Halting 70 L High consumption. Smell of Acid 2%) development vinegar included. Fixer (Rapid) Making the image 65 L The key to archival quality. permanent Reorder soon. Bleach-Fix (RA-4 Color Papers 22 L Stable. Kit) Wetting Agent Streak-free drying 3 L The final touch. Don't (Final) overuse!",
         "type": "Table"
     },
     {
@@ -386,7 +386,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 1,
             "parent_id": "e6a114fb56ebd3c8615f9737bb9aa5c4"
         },
@@ -425,7 +425,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 2
         },
         "text": "",
@@ -463,7 +463,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 2
         },
         "text": "  ",
@@ -502,7 +502,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 2
         },
         "text": "2. Where the Image Comes to Life: Photosensitive Papers",
@@ -541,7 +541,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 2,
             "parent_id": "fe70465b33eff31ea30210c7eab56ef0"
         },
@@ -581,7 +581,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 2,
             "parent_id": "fe70465b33eff31ea30210c7eab56ef0",
             "text_as_html": "<table><thead><tr><th>Paper Type</th><th>Finish</th><th>Surface Area Consumed (m\u2019)</th></tr></thead><tbody><tr><td>RC (Resin Coated)</td><td>Glossy</td><td>180 m?</td></tr><tr><td>RC (Resin Coated)</td><td>Pearl (Lustre/Satin)</td><td>220m?</td></tr><tr><td>Fiber Base (Baryta)</td><td>Glossy</td><td>2 35m</td></tr><tr><td>Fiber Base (Baryta)</td><td>Matte</td><td>2 15m</td></tr></tbody></table>"
@@ -622,7 +622,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 2,
             "parent_id": "fe70465b33eff31ea30210c7eab56ef0"
         },
@@ -662,7 +662,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 2
         },
         "text": "3. The Unsung Heroes of the Dark (Utilities & Safety)",
@@ -701,7 +701,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 2,
             "parent_id": "524bf2489545a896a8c54d98bdeb72e1"
         },
@@ -709,7 +709,7 @@
         "type": "NarrativeText"
     },
     {
-        "element_id": "4e7aa9c8f917e3f0a8a8cf4d50aefe1f",
+        "element_id": "7dc8d28670961b8d4ca6746347244e5c",
         "metadata": {
             "coordinates": {
                 "layout_height": 2339,
@@ -741,16 +741,16 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 2,
             "parent_id": "524bf2489545a896a8c54d98bdeb72e1",
-            "text_as_html": "<table><tbody><tr><td>e</td><td>Deionized Water: 500 Liters Use: Mixing all stock chemistries.</td><td>e \u00a9Safelights (Red Bulbs): 2 replacements</td></tr><tr><td></td><td>This guarantees the purity of our</td><td>Use: Seeing in the dark without</td></tr><tr><td></td><td>baths.</td><td>fogging the paper.</td></tr><tr><td>e</td><td>Nitrile Gloves: 4 Boxes (approx.</td><td>e Carbon Filters (Ventilation): \u2018</td></tr><tr><td></td><td>400 pairs)</td><td>replacement cycle</td></tr><tr><td></td><td>Use: Protection from reagents.</td><td>Use: Keeping the workshop air</td></tr><tr><td></td><td>Safety first!</td><td>breathable.</td></tr><tr><td></td><td></td><td>e Negative Sleeves: 600 units Use: Protecting client negatives.</td></tr></tbody></table>"
+            "text_as_html": "<table><tbody><tr><td>e</td><td>Deionized Water: 500 Liters Use: Mixing all stock chemistries.</td><td>e Safelights (Red Bulbs): 2 replacements</td></tr><tr><td></td><td>This guarantees the purity of our</td><td>Use: Seeing in the dark without</td></tr><tr><td></td><td>baths.</td><td>fogging the paper.</td></tr><tr><td>e</td><td>Nitrile Gloves: 4 Boxes (approx.</td><td>e Carbon Filters (Ventilation):</td></tr><tr><td></td><td>400 pairs)</td><td>replacement cycle</td></tr><tr><td></td><td>Use: Protection from reagents.</td><td>Use: Keeping the workshop air</td></tr><tr><td></td><td>Safety first!</td><td>breathable.</td></tr><tr><td></td><td></td><td>e Negative Sleeves: 600 units Use: Protecting client negatives.</td></tr></tbody></table>"
         },
-        "text": "\u2022 Deionized Water: 500 Liters \u2022 Safelights (Red Bulbs): 2 Use: Mixing all stock chemistries. This guarantees the purity of our baths. replacements Use: Seeing in the dark without fogging the paper. \u2022 Nitrile Gloves: 4 Boxes (approx. 400 pairs) replacement cycle Use: Protection from reagents. Safety first! Use: Keeping the workshop air breathable. \u2022 Negative Sleeves: 600 units",
+        "text": "\u2022 Deionized Water: 500 Liters \u2022 Safelights (Red Bulbs): 2 Use: Mixing all stock chemistries. replacements This guarantees the purity of our Use: Seeing in the dark without baths. fogging the paper. \u2022 Nitrile Gloves: 4 Boxes (approx. 400 pairs) replacement cycle Use: Protection from reagents. Use: Keeping the workshop air Safety first! breathable. \u2022 Negative Sleeves: 600 units",
         "type": "Table"
     },
     {
-        "element_id": "4406e9593b3fab3648a7543453c56e5c",
+        "element_id": "c774639fa74dc4571add5601cd89d8d8",
         "metadata": {
             "coordinates": {
                 "layout_height": 2339,
@@ -781,12 +781,12 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 2,
             "parent_id": "524bf2489545a896a8c54d98bdeb72e1"
         },
-        "text": "Carbon Filters (Ventilation): 1",
-        "type": "ListItem"
+        "text": "\u2022 Carbon Filters (Ventilation): 1",
+        "type": "UncategorizedText"
     },
     {
         "element_id": "e5d870df89526d7fc1d30a1384825ee5",
@@ -820,12 +820,12 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 2,
             "parent_id": "524bf2489545a896a8c54d98bdeb72e1"
         },
         "text": "Use: Protecting client negatives.",
-        "type": "NarrativeText"
+        "type": "UncategorizedText"
     },
     {
         "element_id": "5060481e39d53d3a21077fc12dd8277f",
@@ -859,7 +859,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 2,
             "parent_id": "524bf2489545a896a8c54d98bdeb72e1"
         },
@@ -898,7 +898,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 3
         },
         "text": "",
@@ -936,7 +936,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 3
         },
         "text": "  ",
@@ -975,7 +975,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 3
         },
         "text": "4. The Master Printer's Analysis (Conclusion)",
@@ -1014,7 +1014,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 3,
             "parent_id": "f086eb5baff22cb419791b135b813cf8"
         },
@@ -1054,7 +1054,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 3,
             "parent_id": "f086eb5baff22cb419791b135b813cf8"
         },
@@ -1094,7 +1094,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 3,
             "parent_id": "f086eb5baff22cb419791b135b813cf8"
         },
@@ -1134,7 +1134,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 3,
             "parent_id": "f086eb5baff22cb419791b135b813cf8"
         },
@@ -1173,7 +1173,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2025-11-09T17:56:26",
+            "last_modified": "2025-11-09T16:56:26",
             "page_number": 3,
             "parent_id": "f086eb5baff22cb419791b135b813cf8"
         },

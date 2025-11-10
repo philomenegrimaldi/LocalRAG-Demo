@@ -90,7 +90,10 @@ if page == "Text Processing":
         st.session_state.current_step = None
         st.session_state.last_completed = None
         st.session_state.pipeline_completed = False
-        
+        st.rerun()
+    
+    # Execute pipeline if processing is active
+    if st.session_state.processing:
         # Define processing steps
         steps = [
             {
@@ -143,50 +146,86 @@ if page == "Text Processing":
             }
         ]
         
-        # Create placeholder for status display
-        status_placeholder = st.empty()
+        # Initialize step index if not exists
+        if 'step_index' not in st.session_state:
+            st.session_state.step_index = 0
+            st.session_state.pipeline_error = None
         
-        error = None
-        # Execute each step
-        for i, step in enumerate(steps):
-            # Update current step
-            st.session_state.current_step = step['name']
-            st.session_state.last_completed = steps[i-1]['name'] if i > 0 else None
+        # Create placeholders for status display
+        progress_bar = st.progress(0)
+        status_placeholder = st.empty()
+        log_placeholder = st.empty()
+        
+        total_steps = len(steps)
+        current_step_idx = st.session_state.step_index
+        
+        # Execute current step
+        if current_step_idx < total_steps:
+            step = steps[current_step_idx]
+            
+            # Update progress bar
+            progress = (current_step_idx) / total_steps
+            progress_bar.progress(progress)
             
             # Display status
             status_text = []
-            if st.session_state.last_completed:
-                status_text.append(f"✓ Completed: {st.session_state.last_completed}")
-            status_text.append(f"▶ Running: {st.session_state.current_step}...")
+            if current_step_idx > 0:
+                status_text.append(f"✓ Completed: {steps[current_step_idx-1]['name']}")
+            status_text.append(f"▶ Running: {step['name']}...")
             status_placeholder.info("\n".join(status_text))
             
             # Execute step
-            stdout, stderr, error = run_with_capture(step['func'], *step['args'], **step['kwargs'])
+            with st.spinner(f"Executing {step['name']}..."):
+                stdout, stderr, error = run_with_capture(step['func'], *step['args'], **step['kwargs'])
+            
+            # Display logs if available
+            if stdout or stderr:
+                with log_placeholder.expander(f"📋 Logs: {step['name']}", expanded=False):
+                    if stdout:
+                        st.text("STDOUT:")
+                        st.text(stdout)
+                    if stderr:
+                        st.text("STDERR:")
+                        st.warning(stderr)
             
             if error:
+                st.session_state.pipeline_error = error
                 status_placeholder.error(f"❌ {step['name']} FAILED: {error}")
-                st.error(f"Error in {step['name']}: {error}")
-                break
-            
-            # Mark as completed
-            st.session_state.last_completed = step['name']
-            st.session_state.current_step = None
-            
-            # Update status display
-            status_text = [f"✓ Completed: {st.session_state.last_completed}"]
-            if i < len(steps) - 1:
-                status_text.append(f"⏳ Next: {steps[i+1]['name']}")
-            status_placeholder.success("\n".join(status_text))
-        
-        # Final status
-        if not error:
-            st.session_state.current_step = None
-            st.session_state.last_completed = "All steps"
-            st.session_state.pipeline_completed = True
-            status_placeholder.success("🎉 All processing steps completed successfully! ✓✓✓")
-        
-        st.session_state.processing = False
-        st.rerun()
+                st.error(f"**Error in {step['name']}:** {error}")
+                st.session_state.processing = False
+                st.session_state.step_index = 0
+            else:
+                # Mark step as completed
+                progress = (current_step_idx + 1) / total_steps
+                progress_bar.progress(progress)
+                
+                status_text = [f"✓ Completed: {step['name']}"]
+                if current_step_idx < total_steps - 1:
+                    status_text.append(f"⏳ Next: {steps[current_step_idx + 1]['name']}")
+                status_placeholder.success("\n".join(status_text))
+                
+                # Move to next step
+                st.session_state.step_index += 1
+                
+                # If not the last step, rerun to continue
+                if st.session_state.step_index < total_steps:
+                    time.sleep(0.5)  # Small delay for UI update
+                    st.rerun()
+                else:
+                    # All steps completed
+                    st.session_state.current_step = None
+                    st.session_state.last_completed = "All steps"
+                    st.session_state.pipeline_completed = True
+                    st.session_state.processing = False
+                    st.session_state.step_index = 0
+                    progress_bar.progress(1.0)
+                    status_placeholder.success("🎉 All processing steps completed successfully! ✓✓✓")
+                    st.balloons()
+                    st.rerun()
+        else:
+            # Reset if somehow we're past the last step
+            st.session_state.step_index = 0
+            st.session_state.processing = False
     
     st.markdown("---")
     

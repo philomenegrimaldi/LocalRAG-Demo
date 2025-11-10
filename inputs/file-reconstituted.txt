@@ -10,7 +10,7 @@ Welcome to the backstage of magic! Every perfect print, every successfully devel
 -------------------------------------------------------------
 1. The Liquid Magic: Chemical Consumption
 
-Table 04ab846d55785ded2050c74aab8e5169 (plumber version):
+Table 372162e2f95a39d0bdd69853eb4c4ec7 (plumber version):
 Chemical
 Product |  |  | Primary Use |  |  | Quantity
 (Liters) | Comments / Watch Point |  | 
@@ -29,7 +29,7 @@ Wetting Agent
 (Final) |  |  | Streak-free drying |  |  | 3 L | The final touch. Don't
 overuse! |  |
 
-Table 04ab846d55785ded2050c74aab8e5169 (fitz version):
+Table 372162e2f95a39d0bdd69853eb4c4ec7 (fitz version):
 Chemical 
 Product 
 Primary Use 
@@ -72,7 +72,7 @@ Streak-free drying
 The final touch. Don't 
 overuse!
 
-End of Table 04ab846d55785ded2050c74aab8e5169 (fitz version)
+End of Table 372162e2f95a39d0bdd69853eb4c4ec7 (fitz version)
 -------------------------------------------------------------
 The heart of our craft. This is where the latent image becomes visible. Consumption was steady, with a spike in C-41 color developing, a sure sign that the summer holidays are being processed!
 
@@ -109,10 +109,10 @@ Printer's Note: The matte fiber-base paper was mainly used for the "Urban Contra
 -------------------------------------------------------------
 3. The Unsung Heroes of the Dark (Utilities & Safety)
 
-Table 4e7aa9c8f917e3f0a8a8cf4d50aefe1f (plumber version):
+Table 7dc8d28670961b8d4ca6746347244e5c (plumber version):
 [Table missing]
 
-Table 4e7aa9c8f917e3f0a8a8cf4d50aefe1f (fitz version):
+Table 7dc8d28670961b8d4ca6746347244e5c (fitz version):
 • 
 Deionized Water: 500 Liters 
 Use: Mixing all stock chemistries. 
@@ -138,11 +138,11 @@ breathable.
 Negative Sleeves: 600 units 
 Use: Protecting client negatives.
 
-End of Table 4e7aa9c8f917e3f0a8a8cf4d50aefe1f (fitz version)
+End of Table 7dc8d28670961b8d4ca6746347244e5c (fitz version)
 -------------------------------------------------------------
 These are the workshop's unsung heroes. Without them, we'd have no clean prints and very sore hands!
 
-Carbon Filters (Ventilation): 1
+• Carbon Filters (Ventilation): 1
 
 Use: Protecting client negatives.
 
