@@ -122,3 +122,4 @@ if __name__ == "__main__":
     json_file = "inputs/file_example-partitioned-cleaned"
 
     reconstruct_document(plumber_folder, fitz_folder, json_file)
+

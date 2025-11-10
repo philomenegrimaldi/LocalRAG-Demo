@@ -52,6 +52,7 @@ def extract_fitz(input_folder, output_folder):
     print(f"[OK] Fitz extraction completed. Extracted: {extracted_count} | Errors: {error_count}")
 
 
+
 if __name__ == "__main__":
     input_folder = "inputs/extracts/pdf"
     output_folder = "inputs/extracts/fitz"

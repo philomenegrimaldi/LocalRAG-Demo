@@ -60,6 +60,7 @@ def access_llm(question_llm: str, query_semantic: str, debug: bool = False):
     return response
 
 
+
 if __name__ == "__main__":
     question_llm = "What is the Surface Area Consumed (m²) of RC (Resin Coated) Paper?"
     query_semantic = "RC (Resin Coated) Paper"

@@ -37,3 +37,4 @@ if __name__ == "__main__":
     json_partitioned = "inputs/file_example-partitioned"
     json_cleaned = "inputs/file_example-partitioned-cleaned"
     cleaning(json_partitioned, json_cleaned)
+

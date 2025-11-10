@@ -64,6 +64,7 @@ def extract_plumber(input_folder, output_folder):
 
                 extracted_count += 1
 
+
         except Exception as e:
             print(f"  Error processing {filename}: {e}")
 

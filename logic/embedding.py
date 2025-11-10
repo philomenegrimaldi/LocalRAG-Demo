@@ -43,6 +43,7 @@ def vectorize_chunks(chunks_json: str, vectorstore_folder: str):
         print(f"[ERROR] Failed to initialize embeddings: {e}")
         return
 
+
     # 4. Vectorize the documents
     try:
         print("[INFO] Vectorization in progress...")

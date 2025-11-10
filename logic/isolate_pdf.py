@@ -104,3 +104,4 @@ if __name__ == "__main__":
     json_cleaned = "inputs/file_example-partitioned-cleaned"
     output_folder = "inputs/extracts/pdf"
     isolate_pdf(pdf_file, json_cleaned, output_folder)
+

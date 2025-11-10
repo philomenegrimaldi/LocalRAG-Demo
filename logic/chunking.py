@@ -60,6 +60,7 @@ def chunking(input_path, output_path):
     # Perform chunking
     chunks = chunk_text_with_separator(input_path)
 
+
     # Create JSON structure
     json_chunks = [
         {"chunk_id": f"chunk_{i+1:03d}", "text": chunk}

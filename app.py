@@ -256,6 +256,7 @@ elif page == "LLM Access":
         value="RC (Resin Coated) Paper"
     )
     
+    
     debug_mode = st.checkbox("Debug mode", value=False)
     
     if st.button("🔍 Ask LLM", type="primary"):

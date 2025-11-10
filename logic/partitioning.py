@@ -10,6 +10,7 @@ os.environ["TMPDIR"] = temp_dir
 os.environ["TEMP"] = temp_dir
 os.environ["TMP"] = temp_dir
 
+
 import pytesseract
 # pytesseract.pytesseract.tesseract_cmd = r"C:\Users\grima\AppData\Local\Programs\Tesseract-OCR\tesseract.exe"
 # os.environ["TESSDATA_PREFIX"] = r"C:\Users\grima\AppData\Local\Programs\Tesseract-OCR\tessdata"
