@@ -1,5 +1,5 @@
 
-# 🚀 LocalRAG Demo
+# LocalRAG Demo
 
 ![Python](https://img.shields.io/badge/python-3.10-blue)
 ![Docker](https://img.shields.io/badge/docker-ready-blue)
@@ -10,7 +10,7 @@
 
 ---
 
-### 🧠 Overview
+### Overview
 
 **LocalRAG Demo** is a fully containerized **Retrieval-Augmented Generation (RAG)** pipeline built with **Streamlit** for document querying and visualization.  
 It demonstrates a complete local setup — no external API calls — ideal for **confidential or on-premise applications**.
@@ -23,7 +23,7 @@ This project uses:
 
 ---
 
-## 🧰 Prerequisites
+## Prerequisites
 
 Make sure you have the following installed before starting:
 
@@ -31,7 +31,7 @@ Make sure you have the following installed before starting:
 
 ---
 
-## ⚙️ Setup (One-Time Only)
+## Setup (One-Time Only)
 
 Clone the repository:
 
@@ -40,19 +40,19 @@ git clone https://github.com/philomenegrimaldi/LocalRAG-Demo.git
 cd LocalRAG-Demo
 ```
 
-## Step 1️⃣ — Build the Application
+## Step — Build the Application
 
 ```bash
 docker compose build
 ```
 
-## Step 2️⃣ — Start the Services
+## Step — Start the Services
 
 ```bash
 docker compose up -d
 ```
 
-## Step 3️⃣ — Download the Ollama Models (Important)
+## Step — Download the Ollama Models (Important)
 
 You’ll need to pull the required models once:
 
@@ -64,42 +64,42 @@ docker exec localrag_ollama ollama pull nomic-embed-text
 docker exec localrag_ollama ollama pull mistral:7b
 ```
 
-🕐 *This may take a few minutes. The models are cached in a Docker volume, so this step is only needed once per machine.*
+*This may take a few minutes. The models are cached in a Docker volume, so this step is only needed once per machine.*
 
 ---
 
-## ▶️ Run the App
+## Run the App
 
 Start everything:
 
-# ```bash
-# docker compose up -d
-# ```
+```bash
+docker compose up -d
+```
 
 Then open your browser at:
 
-👉 **http://localhost:8501**
+**http://localhost:8501**
 
 ---
 
-## 🛑 Stop the App
+## Stop the App
 
 To stop both containers:
 
-# ```bash
-# docker compose down
-# ```
+```bash
+docker compose down
+```
 
 ---
 
-## 🔄 Update After Code Changes
+## Update After Code Changes
 
 If you modify Python files or dependencies:
 
-# ```bash
-# docker compose down
-# docker compose up --build -d
-# ```
+```bash
+docker compose down
+docker compose up --build -d
+```
 
 
 ---
@@ -121,7 +121,7 @@ This demo focuses on the same processing logic, using lightweight models and pub
 
 ---
 
-## 🧑‍💻 Author
+## Author
 
 **Philomène Grimaldi**  
 📧 [philomene.grimaldi@iteem.centralelille.fr](mailto:philomene.grimaldi@iteem.centralelille.fr)  
