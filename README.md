@@ -1,98 +1,131 @@
-🚀 LocalRAG Demo
 
-This project is a complete Streamlit application for a RAG (Retrieval-Augmented Generation) pipeline. It uses `unstructured` for PDF processing, `Ollama` for the LLM and embeddings, and `FAISS` for the vector store.
+# 🚀 LocalRAG Demo
 
-The entire project is containerized using Docker and Docker Compose.
-
----
-
-## 📋 Prerequisites
-
-Before you begin, ensure you have this one dependency installed:
-
-* **Docker Desktop** (or Docker Engine on Linux).
+![Python](https://img.shields.io/badge/python-3.10-blue)
+![Docker](https://img.shields.io/badge/docker-ready-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-⚡-red)
+![LangChain](https://img.shields.io/badge/LangChain-📚-green)
+![FAISS](https://img.shields.io/badge/FAISS-Vector%20Store-orange)
+![Ollama](https://img.shields.io/badge/Ollama-LLM-lightblue)
 
 ---
 
-## ⚙️ 1. Initial Setup (One-Time Only)
+### 🧠 Overview
 
-These steps only need to be done **once** when setting up the project on a new machine.
+**LocalRAG Demo** is a fully containerized **Retrieval-Augmented Generation (RAG)** pipeline built with **Streamlit** for document querying and visualization.  
+It demonstrates a complete local setup — no external API calls — ideal for **confidential or on-premise applications**.
 
-## Step 1: Build the Application Image
+This project uses:
+- 🧾 **Unstructured** for PDF parsing  
+- 🧠 **Ollama** for both LLM and embeddings  
+- 📦 **FAISS** as the vector store  
+- 🐳 **Docker Compose** for orchestration
 
-Open a terminal at the project root and run:
+---
+
+## 🧰 Prerequisites
+
+Make sure you have the following installed before starting:
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) (or Docker Engine on Linux)
+
+---
+
+## ⚙️ Setup (One-Time Only)
+
+Clone the repository:
+
+```bash
+git clone https://github.com/philomenegrimaldi/LocalRAG-Demo.git
+cd LocalRAG-Demo
+```
+
+## Step 1️⃣ — Build the Application
 
 ```bash
 docker compose build
 ```
 
-What this does:
-* Downloads the `python:3.11-slim` base image.
-* Installs the required system dependencies (Tesseract, Poppler, libgl1).
-* Creates a Python environment and installs all packages from `requirements.txt` (including the CPU-only version of PyTorch).
-* Creates your local Docker image: `localrag-demo-app`.
-
-### Step 2: Start the Services
-
-Now, start both containers (`app` and `ollama`) in the background:
+## Step 2️⃣ — Start the Services
 
 ```bash
 docker compose up -d
 ```
 
-### Step 3: Download the Ollama Models (Crucial)
+## Step 3️⃣ — Download the Ollama Models (Important)
 
-The containers are running, but the Ollama service is "empty." You must tell it to download the models.
-
-In the same terminal (or a new one), run these two commands, one after the other:
+You’ll need to pull the required models once:
 
 ```bash
-# 1. Download the embedding model (nomic-embed-text)
+# Embedding model
 docker exec localrag_ollama ollama pull nomic-embed-text
 
-# 2. Download the LLM (mistral:7b)
+# LLM model
 docker exec localrag_ollama ollama pull mistral:7b
 ```
 
-Note: This download may take several minutes. The models are saved to a Docker volume, so you will **never** have to do this step again on this machine.
+🕐 *This may take a few minutes. The models are cached in a Docker volume, so this step is only needed once per machine.*
 
 ---
 
-## 🏃‍♂️ 2. Running the Application (Daily Use)
+## ▶️ Run the App
 
-Once the initial setup is complete, starting your application is simple.
+Start everything:
 
-```bash
-docker compose up -d
-```
+# ```bash
+# docker compose up -d
+# ```
 
-(If the containers are already running, this command will do nothing, which is normal).
+Then open your browser at:
 
-Just open your browser and go to:
-
-**http://localhost:8501**
+👉 **http://localhost:8501**
 
 ---
 
-## 🛑 3. Stopping the Application
+## 🛑 Stop the App
 
-To stop both containers (`app` and `ollama`):
+To stop both containers:
 
-```bash
-docker compose down
-```
+# ```bash
+# docker compose down
+# ```
 
 ---
 
-## 🔄 4. How to Update Your Code
+## 🔄 Update After Code Changes
 
-If you **modify the Python code** (like `app.py`, a file in `logic/`) or change the `requirements.txt` file:
+If you modify Python files or dependencies:
 
-1.  Make sure the application is stopped (run `docker compose down`).
-2.  Re-build the application image with your changes and start it:
+# ```bash
+# docker compose down
+# docker compose up --build -d
+# ```
 
-    ```bash
-     docker compose up --build -d
-     ```
 
-(The `-d` is optional; it runs the containers in the background).
+---
+
+## 💡 About
+
+This project is a simplified, open-source version of a confidential RAG pipeline developed during my AI internship.  
+It reproduces the same architecture using public data — a clean, reproducible example of document-based retrieval and local LLM orchestration.
+
+In the original version, I implemented:
+- A verification loop to ensure the consistency and reliability of extracted information.  
+- An automated output module exporting structured results to a PostgreSQL database.  
+- A scalable workflow repeated for around twenty distinct data fields per document, each processed independently through the pipeline.  
+- GPU acceleration to speed up embedding generation and model inference.  
+- A more powerful 12B LLM model, which improved precision, reduced hallucinations, and produced higher-quality answers on complex technical content.
+
+This demo focuses on the same processing logic, using lightweight models and public data for demonstration purposes.
+
+
+---
+
+## 🧑‍💻 Author
+
+**Philomène Grimaldi**  
+📧 [philomene.grimaldi@iteem.centralelille.fr](mailto:philomene.grimaldi@iteem.centralelille.fr)  
+🌐 [LinkedIn](https://www.linkedin.com/in/philomene-grimaldi/)  
+💻 [GitHub](https://github.com/philomenegrimaldi)
+
+
